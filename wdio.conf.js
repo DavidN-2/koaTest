@@ -1,6 +1,3 @@
-const path = require('path');
-const { hooks } = require('./src/support/hooks');
-
 exports.config = {
     //
     // ====================
@@ -75,10 +72,10 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error | silent
-    logLevel: 'trace',
+    logLevel: 'error',
 
     //output directory for logs
-    outputDir: path.join(__dirname, '/logs'),
+    //outputDir: path.join(__dirname, '/logs'),
     //
     // Set specific log levels per logger
     // loggers:
@@ -186,5 +183,4 @@ exports.config = {
         // <number> timeout for step definitions
         timeout: 20000,
     },
-    ...hooks,
 };
