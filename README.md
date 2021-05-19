@@ -2,7 +2,7 @@
 
 #### Pre-requisites
 
-1.Node: `14.15.1` as specified in the `.node-version` file. The framwork is compatible with any Node version 12 or higher, but I prefer fixing it to the latest one
+1.Node: `14.15.1` as specified in the `.node-version` file. The framework is compatible with any Node version 12 or higher, but it has been fixed to the latest one
 
 2.Chrome installed.
 
