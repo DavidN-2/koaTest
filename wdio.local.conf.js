@@ -1,7 +1,7 @@
 var config = require('./wdio.conf').config;
 
 config.specs = [
-  './src/features/example.feature',
+  './src/features/purchases.feature',
 ];
 
 (config.maxInstances = 1),
