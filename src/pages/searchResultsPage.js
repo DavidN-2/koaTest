@@ -6,12 +6,10 @@ class searchResultsPage {
     this.searchResults = `div[id="center_column"]`;
   }
 
-
   selectItem(itemName) {
     waitForDisplayed(this.searchResults, true);
     const item = `.right-block a[title="${itemName}"]`;
     clickElement('click', 'element', item);
-    
   }
 
 }

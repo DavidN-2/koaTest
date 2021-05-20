@@ -8,6 +8,6 @@ Feature: purchases - user not logged
         Given I open the marketplace web
         When I search "printed" in the search box
         And I select "Printed Chiffon Dress" in the results page
-        And I add the item to the chart in the details screen
+        And I add the item to the cart in the details screen
         Then a confirmation message "Product successfully added to your shopping cart" is shown
-        And the item "Printed Chiffon Dress" is shown in the chart confirmation page
+        And the item "Printed Chiffon Dress" is shown in the cart confirmation page

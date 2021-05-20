@@ -12,6 +12,6 @@ When(/^I select "([^"]*)?" in the results page$/, function (itemName) {
   searchResultsPage.selectItem(itemName);
 });
 
-When(/^I add the item to the chart in the details screen$/, function () {
-  itemDetailsPage.addToChart();
+When(/^I add the item to the cart in the details screen$/, function () {
+  itemDetailsPage.addToCart();
 });

@@ -70,7 +70,12 @@ npm run e2etests:local
 
 #### Reports
 
-- Reports are generated in reports/html folder.
-- Two scenarios will pass, and the third one will fail to show the failure screenshot on the reporter.
-- Open the .html report with your favorite browser.
-- Validation is done following the cucumber BDD framework, where all assertions are done on the THEN with no actions after that.
+- Once the test is executed, the report is generated with the next command:
+
+```
+allure generate test-results/ --clean  && allure open
+```
+
+- One scenario will pass, and the other one will fail to show the failure screenshot on the reporter.
+- The report is automatically opened in a new tab
+- A screenshot is taken when a step is failing. To see the screenshot open the failed test case in the suite section and click on the failed step. The execution details will be shown and the last step is takeScreenshot. Unfold this step to see the screenshot
