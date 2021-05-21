@@ -70,7 +70,13 @@ npm run e2etests:local
 
 #### Reports
 
-- Once the test is executed, the report is generated with the next command:
+- To generate the report, install the Allure command-line tool running this command:
+
+```
+npm install -g allure-commandline --save-dev
+```
+
+- When the test is executed, the report is generated running the next command:
 
 ```
 allure generate test-results/ --clean  && allure open
